@@ -42,12 +42,10 @@ import { IProduct } from "../utils/interfaces";
     return data;
   });
 
-  if (products) {
-    for (const product of products) {
-      await saveProduct(product);
-    }
-  } else {
+  if (products.length === 0) {
     console.log("Nenhum produto encontrado.");
+    return;
   }
+  await saveProduct(products);
   console.log(products);
 })();

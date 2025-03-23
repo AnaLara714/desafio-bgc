@@ -1,3 +1,4 @@
+import { DynamoDBDocumentClient, ScanCommand } from "@aws-sdk/lib-dynamodb";
 import { IProduct } from "./interfaces";
 
 export function addProduct(product: IProduct, tableName: string) {
@@ -21,4 +22,15 @@ export function deleteProduct(productId: string, tableName: string) {
     Key: { id: productId },
   };
   return deleteParams;
+}
+
+export async function getExistingProducts(
+  tableName: string,
+  docClient: DynamoDBDocumentClient
+) {
+  const params = {
+    TableName: tableName,
+  };
+  const { Items } = await docClient.send(new ScanCommand(params));
+  return Items || [];
 }
