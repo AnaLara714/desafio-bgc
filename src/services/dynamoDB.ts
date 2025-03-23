@@ -1,3 +1,4 @@
+import dotenv from "dotenv";
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import {
   DynamoDBDocumentClient,
@@ -7,9 +8,14 @@ import {
 } from "@aws-sdk/lib-dynamodb";
 import { IProduct } from "../utils/interfaces";
 import { addProduct, deleteProduct } from "../utils/functions";
+dotenv.config();
 
 const client = new DynamoDBClient({
   region: "sa-east-1",
+  credentials: {
+    accessKeyId: process.env.ACCESS_KEY || "",
+    secretAccessKey: process.env.SECRET_KEY || "",
+  },
 });
 const docClient = DynamoDBDocumentClient.from(client);
 const TABLE_NAME = "Products";
@@ -37,7 +43,7 @@ export async function saveProduct(product: IProduct) {
     if (isDifferent) {
       const deleteParams = deleteProduct(product.id, TABLE_NAME);
       await docClient.send(new DeleteCommand(deleteParams));
-      console.log(`Produto ${product.link} excluído com sucesso!`);
+      console.log(`Produto ${product.id} excluído com sucesso!`);
 
       const putParams = addProduct(product, TABLE_NAME);
       await docClient.send(new PutCommand(putParams));
