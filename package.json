@@ -22,6 +22,7 @@
     "typescript": "^5.8.2"
   },
   "devDependencies": {
-    "@types/puppeteer": "^5.4.7"
+    "@types/puppeteer": "^5.4.7",
+    "serverless": "^4.9.0"
   }
 }
