@@ -116,8 +116,7 @@ https://g3guck0l4k.execute-api.sa-east-1.amazonaws.com/dev/products
 
 - Tabela: `Products`
 - Dados armazenados
-  - `id`
-  - Identificador do produto na Amazon
+  - `id` - Identificador do produto na Amazon
   - `title` - Nome do produto
   - `price` - Preço atual
   - `image` - URL da imagem
