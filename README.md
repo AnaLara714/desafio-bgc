@@ -24,7 +24,7 @@ O fluxo do projeto segue os seguintes passos:
 
 _O Serverless Framework gerencia a infraestrutura e facilita a implantação na AWS._
 
-**Vídeo explicando arquitetura do projeto:** (https://youtu.be/Ege-UKG-qXQ)
+**Vídeo explicando arquitetura e funcinamento do projeto:** (https://youtu.be/Ege-UKG-qXQ)
 
 Fluxo de atualização da lista de produtos no BD: <br>
 
