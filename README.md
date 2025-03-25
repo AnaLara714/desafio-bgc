@@ -24,11 +24,11 @@ O fluxo do projeto segue os seguintes passos:
 
 _O Serverless Framework gerencia a infraestrutura e facilita a implantação na AWS._
 
-**Vídeo explicando arquitetura e funcinamento do projeto:** (https://youtu.be/Ege-UKG-qXQ)
+**Vídeo explicando arquitetura e funcionamento do projeto:** (https://youtu.be/Ege-UKG-qXQ)
 
 Fluxo de atualização da lista de produtos no BD: <br>
 
-[<img src="https://media.discordapp.net/attachments/867480197598281803/1353874793266548870/image.png?ex=67e33da8&is=67e1ec28&hm=9a6460b14ead559217910e2ef93b81cd37ce4d54d12571056caaa18142b85b60&=&format=webp&quality=lossless" height="470"/>](https://media.discordapp.net/attachments/867480197598281803/1353874793266548870/image.png?ex=67e33da8&is=67e1ec28&hm=9a6460b14ead559217910e2ef93b81cd37ce4d54d12571056caaa18142b85b60&=&format=webp&quality=lossless)
+[<img src="https://media.discordapp.net/attachments/867480197598281803/1353915478220865666/image.png?ex=67e3638c&is=67e2120c&hm=45f019d697f40352973ea1148a52bf2043555612f064ff846ccd87ffdee7034e&=&format=webp&quality=lossless" height="470"/>](https://media.discordapp.net/attachments/867480197598281803/1353915478220865666/image.png?ex=67e3638c&is=67e2120c&hm=45f019d697f40352973ea1148a52bf2043555612f064ff846ccd87ffdee7034e&=&format=webp&quality=lossless)
 
 ## 🛠️ Como rodar o Projeto
 
